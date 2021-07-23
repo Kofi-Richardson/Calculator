@@ -6,13 +6,14 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+
 button{
     width: 45px;
     height: 45px;
     text-align: center;
     margin: 3px;
     outline: none;
-  
     background-color: #040b33;
     border: none;
     border-radius: 5px;
@@ -22,8 +23,9 @@ button{
 }
 
 button:hover{
-    width: 46px;
-    height: 46px;
+    /* width: 46px;
+    height: 46px; */
+    opacity: 0.7;
 }
 
 .operator{
@@ -35,7 +37,9 @@ body{
     font-family: 'Montserrat',
     sans-serif;
     background-color: #040b33;
+    color: black;
 }
+
 
 .header{
     margin: 20px;
@@ -64,12 +68,34 @@ body{
  */
 }
 
-.displayboard{
+.result{
     background-color: #f3f3f3;
     width: 250px;
     height: 100px;
     margin: 20px;
     border-radius: 5px;
+    position: relative;
+    /* background: var(--bg); */
+
+}
+
+.upper-value{
+    position: absolute;
+    text-align: right;
+    bottom: 30%;
+    right: 5%;
+    font-size: 32px;
+    color: var(--color-text);
+    
+ 
+}
+.lower-value{
+    position: absolute;
+    text-align: right;
+    bottom: 2%;
+    right: 5%;
+    font-size: 32px;
+    color: var(--color-text);
 }
 .keypad{
     display: flex;
